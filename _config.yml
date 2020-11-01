@@ -11,7 +11,7 @@ external-image: false
 picture: assets/images/profile.jpg
 
 #TODO:: URLを変更する
-url: https://piropiro-piro.github.io/Webbbbbbb-site/
+url: https://piropiro-piro.github.io/site/
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
