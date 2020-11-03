@@ -1,3 +1,6 @@
+# URL
+- https://webbbbbbb.com
+
 # 初回のみ作業
 1. siteのgithubリポジトリをローカルにクローン
 ```
