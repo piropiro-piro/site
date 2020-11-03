@@ -12,19 +12,18 @@ picture: assets/images/profile.jpg
 
 #TODO:: URLを変更する
 url: https://webbbbbbb.com/
-# your url: https://USERNAME.github.io
 
 permalink: /:title/
 
 #TODO:: GAを入れるなら変更する
 # To enable google analytics, supply your token below
-# analytics-google: 'UA-MYANALYTICS'
+analytics-google: 'G-WQ4JGDQTYN'
 
 #TODO:: コメントしてもらうならアカウント作って変更する
 # if you don't want comments in your posts, leave categories empty
-#disqus:
-#  shortname: mydisqus # enter this from your disqus account
-#  categories: [project, blog] # only show disqus for posts that have these categories
+disqus:
+  shortname: webbbbbbb # enter this from your disqus account
+  categories: [project, blog] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
