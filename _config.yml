@@ -120,9 +120,6 @@ compress_html:
 exclude:
   [
     "README.md"
-    "travis.sh",
     "Gemfile",
     "Gemfile.lock",
-    "node_modules",
-    "vendor",
   ]
