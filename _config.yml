@@ -118,8 +118,7 @@ compress_html:
       - stage
 
 exclude:
-  [
-    "README.md"
-    "Gemfile",
-    "Gemfile.lock",
-  ]
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
