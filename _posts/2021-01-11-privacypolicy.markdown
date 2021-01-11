@@ -1,7 +1,9 @@
 ---
 title: "プライバシーポリシーと免責事項"
 layout: post
-date: 2021-01-11 18:00
+date: 2021-01-10 18:00
+tag: 
+- 競馬
 projects: true
 hidden: true # don't count this post in blog pagination
 description: "プライバシーポリシーと免責事項"
