@@ -1,12 +1,12 @@
 ---
 title: "プライバシーポリシーと免責事項"
 layout: post
-date: 2999-01-10 18:00
+date: 2021-01-10 18:00
 tag: 
 projects: true
 hidden: true # don't count this post in blog pagination
 description: "プライバシーポリシーと免責事項"
-category: project
+category: non-project
 author: piropiro
 externalLink: false
 ---
