@@ -16,4 +16,4 @@ https://apps.apple.com/jp/app/%E9%80%B2%E6%8D%97%E3%81%84%E3%81%8B%E3%81%8C%E3%8
 ### Google Play Store
 https://play.google.com/store/apps/details?id=com.webbbbbbb.todoflow
 
-## 何するアプリ？
+## 何をするアプリ？
