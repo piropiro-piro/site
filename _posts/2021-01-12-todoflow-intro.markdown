@@ -24,13 +24,13 @@ externalLink: false
 
 を設定するとそのタスクを1日にどれくらいやればよいのかを教えてくれます。
 
-[a](https://webbbbbbb.com/assets/images/posts/20210112/1.png){:height="360px" width="360px"}
+![a](https://webbbbbbb.com/assets/images/posts/20210112/1.png){:height="360px" width="360px"}
 
 進捗を入力していない場合は通知で入力を促します。
 
-[a](https://webbbbbbb.com/assets/images/posts/20210112/2.png){:height="360px" width="360px"}
+![a](https://webbbbbbb.com/assets/images/posts/20210112/2.png){:height="360px" width="360px"}
 
 進捗の入力はダイヤルを使います。
 一日分がダイヤル一周に相当します。
 
-[a](https://webbbbbbb.com/assets/images/posts/20210112/3.png){:height="360px" width="360px"}
+![a](https://webbbbbbb.com/assets/images/posts/20210112/3.png){:height="360px" width="360px"}
