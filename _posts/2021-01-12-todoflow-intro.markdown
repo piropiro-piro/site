@@ -17,5 +17,20 @@ externalLink: false
 [Google Play Store](https://play.google.com/store/apps/details?id=com.webbbbbbb.todoflow)
 
 ### 何をするアプリ？
-![説明1](assets/images/posts/20210112/1.png)
+タスク(ex:本を読む、問題集を解く...等)
+- ゴール(ex:ページ数...等)
+- 期日
+- 実施する曜日(ex:平日のみ...等)
 
+を設定するとそのタスクを1日にどれくらいやればよいのかを教えてくれます。
+
+<img src="https://webbbbbbb.com/assets/images/posts/20210112/1.png" width=50%>
+
+進捗を入力していない場合は通知で入力を促します。
+
+<img src="https://webbbbbbb.com/assets/images/posts/20210112/2.png" width=50%>
+
+進捗の入力はダイヤルを使います。
+一日分がダイヤル一周に相当します。
+
+<img src="https://webbbbbbb.com/assets/images/posts/20210112/3.png" width=50%>
