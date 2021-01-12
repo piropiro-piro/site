@@ -49,8 +49,15 @@ authors:
     name: piropiro
     bio: 家系ラーメンが食べたい
     external-image: false
-    picture: assets/images/profile.jpg
+    picture: assets/images/profile/profile_piropiro.jpg
     twitter: PATRIOT_OPIA
+
+  evange_:
+    name: どみどみどみなんと☆
+    bio: 社長(仮)です
+    external-image: false
+    picture: assets/images/profile/profile_evange.jpg
+    twitter: evange_
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
