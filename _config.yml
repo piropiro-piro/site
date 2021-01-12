@@ -10,7 +10,8 @@ description: 作ったものの一覧と備忘録
 external-image: false
 picture: assets/images/profile.jpg
 
-#TODO:: URLを変更する
+#URL
+baseurl: https://webbbbbbb.com
 url: https://webbbbbbb.com
 
 permalink: /:title/
