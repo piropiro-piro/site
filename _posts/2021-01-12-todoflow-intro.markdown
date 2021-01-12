@@ -16,7 +16,7 @@ externalLink: false
 ### Google Play Store
 [Google Play Store](https://play.google.com/store/apps/details?id=com.webbbbbbb.todoflow)
 
-### 何をするアプリ？
+## 何をするアプリ？
 タスク(ex:本を読む、問題集を解く...等)
 - ゴール(ex:ページ数...等)
 - 期日
@@ -34,3 +34,9 @@ externalLink: false
 一日分がダイヤル一周に相当します。
 
 ![a](/images/posts/20210112/3.png){:width="360px"}
+
+## ストアへのリンク
+### App Store
+[App Store](https://apps.apple.com/jp/app/%E9%80%B2%E6%8D%97%E3%81%84%E3%81%8B%E3%81%8C%E3%81%A7%E3%81%99%E3%81%8B/id1539676451?l=ja)
+### Google Play Store
+[Google Play Store](https://play.google.com/store/apps/details?id=com.webbbbbbb.todoflow)
