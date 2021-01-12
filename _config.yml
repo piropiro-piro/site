@@ -11,7 +11,6 @@ external-image: false
 picture: assets/images/profile.jpg
 
 #URL
-baseurl: https://webbbbbbb.com
 url: https://webbbbbbb.com
 
 permalink: /:title/
