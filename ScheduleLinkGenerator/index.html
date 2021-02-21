@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>カレンダー 予定リンク ジェネレータ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-git.min.js"></script>
+    <script data-ad-client="ca-pub-2231938304416025" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .del-vartical-margin {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-top: 30px solid gray;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Input Card-->
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+            <div class="card">
+
+                <div class="card-action teal lighten-1 white-text center">
+                    <h5>予定リンク ジェネレータ</h5>
+                    <span>
+                        Google Calendarの予定リンクを生成<br />
+                        SNSを通じて友人に予定をシェアできます
+                    </span>
+                </div>
+
+                <div class="card-content">
+
+                    <!--required fields-->
+                    <div class="input-field">
+                        <i class="material-icons prefix">event</i>
+                        <label for="f_title">予定のタイトル</label>
+                        <input type="text" id="f_title">
+                    </div>
+
+                    <div class="row del-vartical-margin">
+                        <div class="input-field col s8 del-vartical-margin">
+                            <i class="material-icons prefix">schedule</i>
+                            <input id="f_start_date" onchange="setStartDate();">
+                        </div>
+                        <div class="input-field col s4 del-vartical-margin">
+                            <input id="f_start_time" onchange="setStartTime();">
+                        </div>
+                    </div>
+                    <span style="margin-left: 45px;">～</span>
+                    <div class="row" style="margin-top: 0;">
+                        <div class="input-field col s8 del-vartical-margin">
+                            <i class="material-icons prefix"></i>
+                            <input id="f_end_date">
+                        </div>
+                        <div class="input-field col s4 del-vartical-margin">
+                            <input id="f_end_time">
+                        </div>
+                    </div>
+
+                    <!--optional fields-->
+                    <div class="input-field">
+                        <i class="material-icons prefix">subject</i>
+                        <label for="f_details">予定の説明</label>
+                        <textarea id="f_details" class="materialize-textarea"></textarea>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="material-icons prefix">place</i>
+                        <label for="f_place">場所</label>
+                        <input type="text" id="f_place">
+                    </div>
+                </div>
+
+                <!--submit button-->
+                <div class="form-field">
+                    <button class="btn-large waves-effect waves-dark" style="width:100%;"
+                        onclick="genLink();">リンク生成</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Clipboard Card-->
+    <div class="row" id="clipboardcard" style="display: none;">
+        <div class="triangle"></div>
+        <div class="col s12 m8 offset-m2">
+            <div class="card">
+                <div class="card-action teal lighten-1 white-text center">
+                    <h5>予定リンク</h5>
+                    <span>
+                        下記のリンクをコピーして予定をシェアしましょう
+                    </span>
+                </div>
+                <div class="card-content" style="padding: 20px;">
+                    <textarea id="f_clipboard" style="height: 100px; resize: none;" readonly></textarea>
+                    <br /><br />
+                    <div class="form-field">
+                        <button class="btn-large waves-effect waves-dark" style="width:100%;"
+                            onclick="getClipboard();">クリップボードにコピー</button>
+                    </div>
+                    <div class="center" style="margin-top: 10px;">
+                        <a id="mycalendar">自分のカレンダーにも登録する</a>
+                    </div>
+                    <div class="center" style="margin-top: 15px;">
+                        <a id="link_twitter">
+                            <img src="./img/twitter.png" alt="TWITTER" height="25" />
+                        </a>&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <a id="link_line">
+                            <img src="./img/line.png" alt="line" height="25" />
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--Ad & Footer-->
+    <footer class="footer-copyright" style="text-align: center;">
+        © 2021 Copyright piropiro-piro<br />
+        English version is <a href="./en/">here</a>.
+    </footer>
+
+
+    <script>
+        now = new Date();
+        document.addEventListener('DOMContentLoaded', function () {
+            var date_options = {
+                defaultDate: new Date(now.getFullYear(), now.getMonth(), now.getDate()),
+                setDefaultDate: true,
+                format: "yyyy/mm/dd(ddd)"
+            };
+            init_time = now.getHours();
+            if (now.getMinutes() != 0){
+                init_time += 1;
+                if (init_time == 24){
+                    init_time = 0;
+                }
+            }
+            var time_options = {
+                defaultTime: ('00'+ init_time).slice(-2) + ":" + "00",
+                twelveHour: false,
+            };
+            var picker_start_date = M.Datepicker.init(document.querySelector('#f_start_date'), date_options);
+            var picker_end_date = M.Datepicker.init(document.querySelector('#f_end_date'), date_options);
+            var picker_start_time = M.Timepicker.init(document.querySelector('#f_start_time'), time_options);
+            var picker_end_time = M.Timepicker.init(document.querySelector('#f_end_time'), time_options);
+            picker_start_time._updateTimeFromInput();
+            picker_start_time.done();
+            picker_end_time._updateTimeFromInput();
+            picker_end_time.done();
+        });
+        function setStartDate() {
+            document.querySelector('#f_end_date').value = document.querySelector('#f_start_date').value;
+        }
+        function setStartTime() {
+            document.querySelector('#f_end_time').value = document.querySelector('#f_start_time').value;
+        }
+        function genLink() {
+            //リンク生成
+            link = "https://www.google.com/calendar/render?action=TEMPLATE";
+            link += "&text=" + document.querySelector("#f_title").value;
+            dates = document.querySelector("#f_start_date").value.replaceAll('/', '').slice(0, 8) + "T";
+            dates += document.querySelector("#f_start_time").value.replace(':', '').slice(0, 4) + "00";
+            dates += "/";
+            dates += document.querySelector("#f_end_date").value.replaceAll('/', '').slice(0, 8) + "T";
+            dates += document.querySelector("#f_end_time").value.replace(':', '').slice(0, 4) + "00";
+            link += "&dates=" + dates;
+            if (document.querySelector("#f_details").value != "") {
+                link += "&details=" + document.querySelector("#f_details").value;
+            }
+            if (document.querySelector("#f_place").value != "") {
+                link += "&location=" + document.querySelector("#f_place").value;
+            }
+            ctext = "【Google Calendar に予定を登録する】\n";
+            ctext += link + "\n\n";
+            ctext += " by 予定リンク ジェネレータ("+location.href+")";
+            document.querySelector("#f_clipboard").value = ctext;
+            //シェアリンク
+            document.querySelector("#mycalendar").href = link;
+            document.querySelector("#link_twitter").href = "https://twitter.com/share?text=" + ctext.replaceAll('&', '%26');
+            document.querySelector("#link_line").href = "http://line.me/R/msg/text/?" + ctext.replaceAll('&', '%26');
+            //アニメーション
+            $(function () {
+                $('#clipboardcard').fadeIn(300);
+                $("html,body").animate({ scrollTop: $('#f_clipboard').offset().top }, 1000, "swing");
+            });
+        }
+        function getClipboard() {
+            clipboard = document.querySelector("#f_clipboard");
+            clipboard.select();
+            document.execCommand('copy');
+        }
+    </script>
+
+</body>
+
+</html>
