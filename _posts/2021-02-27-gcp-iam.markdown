@@ -1,0 +1,33 @@
+---
+title: "Google Cloud Platformの認証情報を取得する方法"
+date: 2021-02-27 18:12
+tag: 
+- google cloud platform
+projects: false
+hidden: false
+description: ""
+category: blog
+author: evange_
+externalLink: false
+---
+
+## GCPのサービスアカウント
+
+![a]({{ "/assets/images/posts/2021-02-27-gcp-iam/1.png" | relatvie_url }}){:width="240px"}
+
+[Google Cloud Platform](https://console.cloud.google.com/?hl=JA)にログインし、プロジェクトを選択してハンバーガーメニューの「IAMと管理」を選択します。  
+
+![a]({{ "/assets/images/posts/2021-02-27-gcp-iam/2.png" | relatvie_url }}){:width="720px"}
+
+サイドの「サービスアカウント」を選択し、サービスアカウントの一覧を表示します。  
+ここでサービスアカウントを新たに作成したい場合は上部の「サービスアカウントを作成」からサービスアカウントを作成してください。
+
+![a]({{ "/assets/images/posts/2021-02-27-gcp-iam/3.png" | relatvie_url }}){:width="480px"}
+
+サービスアカウントのメールアドレスをクリックし、アカウントの詳細を開きます。  
+「キー」タブの「鍵を追加」を選択し、「新しい鍵を作成」をクリックします。
+
+![a]({{ "/assets/images/posts/2021-02-27-gcp-iam/4.png" | relatvie_url }}){:width="480px"}
+
+JSON形式で認証情報をダウンロードできます。
+private_keyなどの情報が含まれますので、取り扱いには注意が必要です。
