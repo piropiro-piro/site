@@ -3,13 +3,14 @@ title: "Google Calendarの共有リンクを作成する"
 layout: post
 date: 2021-02-28 03:00
 tag: 
-- google cloud platform
+- Google Calendar
 description: "イベントの参加者に予定を連絡する際に、Google Calendarの予定を共有リンクとして貼り付けられたらいいなと思い、Google Calendarの共有リンクを作成するツールを作成しました。"
 category: blog
 author: piropiro
 externalLink: false
 ---
 
+## 作ったもの
 イベントの参加者に予定を連絡する際に、Google Calendarの予定を共有リンクとして貼り付けられたらいいなと思い、Google Calendarの共有リンクを作成するツールを作成しました。
 
 相手が予定を登録する手間を減らしたり、予定をブッチされないようにするなどで使えると思います。
