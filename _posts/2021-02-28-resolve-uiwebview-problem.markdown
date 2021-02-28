@@ -6,13 +6,15 @@ tag:
 - Flutter
 - Twitter
 - iOS
-description: 
-"こんにちは、やっくるです。
-先日、Flutter フレームワークを使用し、Firebase で Twitter の認証機能を実装し実機で試そうとしました。"
+description: ""
 category: blog
 author: yakkuru
 externalLink: false
 ---
+
+こんにちは、やっくるです。
+
+先日、Flutter フレームワークを使用し、Firebase で Twitter の認証機能を実装し実機で試そうとしました。
 
 ## 問題
 
