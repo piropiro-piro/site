@@ -17,7 +17,7 @@ externalLink: false
 
 本日、自分のツイートやいいねをふり返ることができるアプリ**「Tweet Logger」**をリリースいたしました！
 
-![a]({{ "assets/images/posts/2021-04-08-tweet-logger-released/tweet-logger.png" | relatvie_url }}){:width="240px"}
+<!-- ![a]({{ "assets/images/posts/2021-04-08-tweet-logger-released/tweet-logger.png" | relatvie_url }}){:width="240px"} -->
 
 保存したツイートを検索したり、RT、いいねされた数で絞って閲覧する機能を利用していただけます。<br>
 また、ツイートの画像だけを一覧で見たり、1日のツイート数や特定の日のツイートだけを見ることもできます。
@@ -28,24 +28,24 @@ externalLink: false
 - 地名で検索して、その場所での思い出をふり返ることができる
 - RT数でフィルタして、自分のバズったツイートを見返せる
 
-![a]({{ "assets/images/posts/2021-04-08-tweet-logger-released/1.png" | relatvie_url }}){:width="360px"}
+<!-- ![a]({{ "/assets/images/posts/2021-04-08-tweet-logger-released/1.png" | relatvie_url }}){:width="360px"} -->
 
 ### ポイント2 ： 過去の画像の一覧をふり返ることができる
 - 友人と行った店の名前が思い出せなくても画像で探し出せる
 
-![a]({{ "assets/images/posts/2021-04-08-tweet-logger-released/2.png" |relatvie_url }}){:width="360px"}
+<!-- ![a]({{ "/assets/images/posts/2021-04-08-tweet-logger-released/2.png" |relatvie_url }}){:width="360px"} -->
 
 ## ポイント3 ： カレンダーでツイートをふり返ることができる
 - 去年の今頃何してたのか、思い出をふり返ることができる
 - 毎日どのくらいツイートしたのかチェックできる
 
-![a]({{ "assets/images/posts/2021-04-08-tweet-logger-released/3.png" |relatvie_url }}){:width="360px"}
+<!-- ![a]({{ "/assets/images/posts/2021-04-08-tweet-logger-released/3.png" |relatvie_url }}){:width="360px"} -->
 
 ## ポイント4 ： 自分のツイートと同じように、いいねをふり返ることができる（有償）
 - 過去にいいねをしたイベントのツイートを検索できる
 - いいねをしすぎて埋もれてしまった、画像を探せる
 
-![a]({{ "assets/images/posts/2021-04-08-tweet-logger-released/4.png" |relatvie_url }}){:width="360px"}
+<!-- ![a]({{ "/assets/images/posts/2021-04-08-tweet-logger-released/4.png" |relatvie_url }}){:width="360px"} -->
 
 
 ## もっと便利な機能
