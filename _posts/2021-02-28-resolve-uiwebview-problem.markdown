@@ -14,7 +14,7 @@ externalLink: false
 
 こんにちは、やっくるです。
 
-先日、Flutter フレームワークを使用し、Firebase で Twitter の認証機能を実装し実機で試そうとしました。
+先日、Flutter フレームワークを使用し、Firebase で Twitter の認証機能を実装し、実機で試そうとしました。
 
 ## 問題
 
