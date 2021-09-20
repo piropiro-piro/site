@@ -1,5 +1,5 @@
 ---
-title: "「Tweet Logger」アプリリリース！"
+title: "「Tweet Logger - 自分の過去のツイート・いいね・画像を検索できるアプリ」リリース！"
 layout: post
 date: 2021-04-08 10:00
 tag:
@@ -9,7 +9,7 @@ tag:
 - Android
 projects: true
 hidden: true
-description: "「Tweet Logger」アプリリリース！"
+description: "「Tweet Logger - 自分の過去のツイート・いいね・画像を検索できるアプリ」リリース！"
 category: project
 author: yakkuru
 externalLink: false
